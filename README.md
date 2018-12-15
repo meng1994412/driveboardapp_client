@@ -4,9 +4,9 @@
 The [driveboardapp](https://github.com/nortd/driveboardapp) is the software that controls the laser cut machine at MSR lab. We want to implement a camera to help user to localize the position for laser to cut in the future. Thus, the goal of the project is to control the laser cutter from backend at client computer and visualize the where and what to cut from the camera mounted on the laser cutter.
 
 ## Language/Packages Used:
-Python 2.7 (beaglebone computer) / 3.5 (client computer)
-[socket](https://docs.python.org/3/library/socket.html)
-[OpenCV](https://docs.opencv.org/3.4.4/) 3.4.4
+* Python 2.7 (beaglebone computer) / 3.5 (client computer)
+* [socket](https://docs.python.org/3/library/socket.html)
+* [OpenCV](https://docs.opencv.org/3.4.4/) 3.4.4
 
 ## Approaches
 There are two repositories for the project. The first one is [driveboardapp](https://github.com/meng1994412/driveboardapp), including the original driveboardapp software plus some development scripts (each script will be explained in details in the following steps) for the project. All codes in this repository will run on the beaglebone machine on the laser cut machine. The second one is this repository named [driveboardapp_client](https://github.com/meng1994412/driveboardapp_client), which contains the documentation of the project for future purpose.
