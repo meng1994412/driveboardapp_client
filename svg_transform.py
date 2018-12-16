@@ -7,19 +7,19 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-s", "--svg", required = True, help = "Path to the SVG file")
 ap.add_argument("-c", "--command", required = False, default = 'Nothing',
                 help = "Type of the transformation applied to the SVG file")
-ap.add_argument("-x", "--tx", required = False, default = 0.0,
+ap.add_argument("-x", "--tx", type = float, default = 0.0,
                 help = "translation in x direction")
-ap.add_argument("-y", "--ty", required = False, default = 0.0,
+ap.add_argument("-y", "--ty", type = float, default = 0.0,
                 help = "translation in y direction")
-ap.add_argument("-a", "--angle", required = False, default = 0.0,
+ap.add_argument("-a", "--angle", type = float, default = 0.0,
                 help = "rotation angle")
-ap.add_argument("-c1", "--cx", required = False, default = 0.0,
+ap.add_argument("-c1", "--cx", type = float, default = 0.0,
                 help = "rotation point x")
-ap.add_argument("-c2", "--cy", required = False, default = 0.0,
+ap.add_argument("-c2", "--cy", type = float, default = 0.0,
                 help = "rotation point y")
-ap.add_argument("-s1", "--sx", required = False, default = 1.0,
+ap.add_argument("-s1", "--sx", type = float, default = 1.0,
                 help = "scale of x axis")
-ap.add_argument("-s2", "--sy", required = False, default = 1.0,
+ap.add_argument("-s2", "--sy", type = float, default = 1.0,
                 help = "scale of y axis")
 args = vars(ap.parse_args())
 

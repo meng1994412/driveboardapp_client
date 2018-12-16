@@ -9,7 +9,7 @@ import cv2
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument("-o", "--output", type=str, default="barcodes.csv",
+ap.add_argument("-o", "--output", type=str, default="barcode.csv",
 	help="path to output CSV file containing barcodes")
 args = vars(ap.parse_args())
 
